@@ -17,10 +17,19 @@ class ViewController: UIViewController {
 
   var showCities: [String] = []
   var allCities = ["New York", "London", "Oslo", "Warsaw", "Berlin", "Praga"]
+  let disposeBag = DisposeBag() // 뷰가 할당 해제될 때 놓아줄 수 있는 일회용품의 가방
 
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.dataSource = self
+
+    searchBar
+      .rx.text // RxCocoa의 Observable 속성
+      .orEmpty // optional이 아니게 만듬 (String? => String)
+      .subscribe(onNext: { [unowned self] query in
+        self.showCities = self.allCities.filter { $0.hasPrefix(query) }
+        self.tableView.reloadData()
+      }).disposed(by: disposeBag)
   }
 
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
