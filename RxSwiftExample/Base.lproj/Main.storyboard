@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="300" id="b4R-fD-7a9"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="k4C-Ny-00H" customClass="CityTableCell" customModule="RxSwiftExample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityTableCell" id="k4C-Ny-00H" customClass="CityTableCell" customModule="RxSwiftExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k4C-Ny-00H" id="drl-hG-rHe" customClass="CityTableCell" customModule="RxSwiftExample" customModuleProvider="target">
