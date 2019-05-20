@@ -17,61 +17,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="d7Y-jF-crM">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tvu-0C-Lh2">
-                                <rect key="frame" x="0.0" y="100" width="414" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="b4R-fD-7a9"/>
-                                </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityTableCell" id="k4C-Ny-00H" customClass="CityTableCell" customModule="RxSwiftExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k4C-Ny-00H" id="drl-hG-rHe" customClass="CityTableCell" customModule="RxSwiftExample" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNy-lp-8Ml">
-                                                    <rect key="frame" x="16" y="0.0" width="382" height="43.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="fNy-lp-8Ml" secondAttribute="trailing" constant="16" id="a2L-xZ-WFH"/>
-                                                <constraint firstAttribute="bottom" secondItem="fNy-lp-8Ml" secondAttribute="bottom" id="hxS-L5-iPv"/>
-                                                <constraint firstItem="fNy-lp-8Ml" firstAttribute="top" secondItem="drl-hG-rHe" secondAttribute="top" id="rSq-UF-11q"/>
-                                                <constraint firstItem="fNy-lp-8Ml" firstAttribute="leading" secondItem="drl-hG-rHe" secondAttribute="leading" constant="16" id="znQ-Tx-pDM"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="titleLabel" destination="fNy-lp-8Ml" id="S5g-5a-Rj6"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="d7Y-jF-crM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M7f-Ah-HJa"/>
-                            <constraint firstItem="d7Y-jF-crM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QYG-eq-ZvT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tvu-0C-Lh2" secondAttribute="trailing" id="fn8-q3-fEY"/>
-                            <constraint firstAttribute="trailing" secondItem="d7Y-jF-crM" secondAttribute="trailing" id="gGz-Li-Po4"/>
-                            <constraint firstItem="tvu-0C-Lh2" firstAttribute="top" secondItem="d7Y-jF-crM" secondAttribute="bottom" id="h9K-m8-SOy"/>
-                            <constraint firstItem="tvu-0C-Lh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i9C-iC-vjT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="searchBar" destination="d7Y-jF-crM" id="3XJ-9w-F4X"/>
-                        <outlet property="tableView" destination="tvu-0C-Lh2" id="0k4-Ck-elt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,7 +13,6 @@
 		E28EF4AB22928346002D4150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28EF4A922928346002D4150 /* Main.storyboard */; };
 		E28EF4AD22928347002D4150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28EF4AC22928347002D4150 /* Assets.xcassets */; };
 		E28EF4B022928347002D4150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28EF4AE22928347002D4150 /* LaunchScreen.storyboard */; };
-		E28EF4B82292870E002D4150 /* CityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EF4B72292870E002D4150 /* CityTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		E28EF4AC22928347002D4150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E28EF4AF22928347002D4150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28EF4B122928347002D4150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E28EF4B72292870E002D4150 /* CityTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableCell.swift; sourceTree = "<group>"; };
 		E28EF4B922928AB0002D4150 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28EF4BB22928AB0002D4150 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28EF4BD22928AB0002D4150 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +81,6 @@
 				E28EF4AC22928347002D4150 /* Assets.xcassets */,
 				E28EF4AE22928347002D4150 /* LaunchScreen.storyboard */,
 				E28EF4B122928347002D4150 /* Info.plist */,
-				E28EF4B72292870E002D4150 /* CityTableCell.swift */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28EF4B82292870E002D4150 /* CityTableCell.swift in Sources */,
 				E28EF4A822928346002D4150 /* ViewController.swift in Sources */,
 				E28EF4A622928346002D4150 /* AppDelegate.swift in Sources */,
 			);
