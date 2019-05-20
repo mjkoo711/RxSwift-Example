@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     searchBar
       .rx.text // RxCocoa의 Observable 속성
       .orEmpty // optional이 아니게 만듬 (String? => String)
+      .debounce(RxTimeInterval.seconds(Int(0.5)), scheduler: MainScheduler.instance)
+      .distinctUntilChanged() // 새로운 값이 이전과 같은지 확인
+      .filter{ !$0.isEmpty } // 빈 값일 때는 필터로 막음
       .subscribe(onNext: { [unowned self] query in
         self.showCities = self.allCities.filter { $0.hasPrefix(query) }
         self.tableView.reloadData()
