@@ -8,4 +8,5 @@ target 'RxSwiftExample' do
   # Pods for RxSwiftExample
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 end
